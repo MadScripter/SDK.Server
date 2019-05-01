@@ -1,5 +1,6 @@
 using JetBrains.Annotations;
 using NFive.SDK.Core.Diagnostics;
+using NFive.SDK.Server.Databases;
 
 namespace NFive.SDK.Server.Configuration
 {
@@ -24,6 +25,14 @@ namespace NFive.SDK.Server.Configuration
 		/// The database connection string.
 		/// </value>
 		public static string DatabaseConnection { get; set; } = "Host=localhost";
+
+		/// <summary>
+		/// Gets or sets the database type.
+		/// </summary>
+		/// <value>
+		/// The database type.
+		/// </value>
+		public static DatabaseType DatabaseType { get; set; }
 
 		/// <summary>
 		/// Gets or sets a value indicating whether automatic database migrations are enabled.
